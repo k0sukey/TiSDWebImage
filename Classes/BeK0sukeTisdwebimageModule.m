@@ -46,14 +46,6 @@
 	[super shutdown:sender];
 }
 
-#pragma mark Cleanup 
-
--(void)dealloc
-{
-	// release any resources that have been retained by the module
-	[super dealloc];
-}
-
 #pragma mark Internal Memory Management
 
 -(void)didReceiveMemoryWarning:(NSNotification*)notification
@@ -102,5 +94,14 @@
 {
 	// example property setter
 }
+
+MAKE_SYSTEM_PROP(CAMERA_FRONT, SDWebImageRetryFailed);
+MAKE_SYSTEM_PROP(LOW_PRIORITY, SDWebImageLowPriority);
+MAKE_SYSTEM_PROP(CACHE_MEMORY_ONLY, SDWebImageCacheMemoryOnly);
+MAKE_SYSTEM_PROP(PROGRESSIVE_DOWNLOAD, SDWebImageProgressiveDownload);
+MAKE_SYSTEM_PROP(REFRESH_CACHED, SDWebImageRefreshCached);
+MAKE_SYSTEM_PROP(CONTINUTE_IN_BACKGROUND, SDWebImageContinueInBackground);
+MAKE_SYSTEM_PROP(HANDLE_COOKIES, SDWebImageHandleCookies);
+MAKE_SYSTEM_PROP(ALLOW_INVALID_SSL_CERTIFICATES, SDWebImageAllowInvalidSSLCertificates);
 
 @end
