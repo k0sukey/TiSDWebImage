@@ -96,8 +96,10 @@
     if ([TiUtils stringValue:[self.proxy valueForKey:@"defaultImage"]] == nil)
     {
         placeholder = [UIImage imageNamed:@"modules/be.k0suke.tisdwebimage/photoDefault.png"];
-    }
-    
+    } else {
+		placeholder = [UIImage imageNamed:[TiUtils stringValue:[self.proxy valueForKey:@"defaultImage"]]];
+	}
+
     [imageview setImageWithURL:url
                    placeholderImage:placeholder
                             options:[TiUtils intValue:[self.proxy valueForKey:@"options"] def:0]
