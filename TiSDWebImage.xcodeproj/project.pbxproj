@@ -63,6 +63,8 @@
 		24DE9E1211C5FE74003F90F6 /* BeK0sukeTisdwebimageModuleAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DE9E1011C5FE74003F90F6 /* BeK0sukeTisdwebimageModuleAssets.m */; };
 		AA747D9F0F9514B9006C5449 /* BeK0sukeTisdwebimage_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* BeK0sukeTisdwebimage_Prefix.pch */; };
 		AACBBE4A0F95108600F1A2B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AACBBE490F95108600F1A2B1 /* Foundation.framework */; };
+		B03217B81930B8CC009955F8 /* UIImageView+UIActivityIndicatorForSDWebImage.h in Headers */ = {isa = PBXBuildFile; fileRef = B03217B61930B8CC009955F8 /* UIImageView+UIActivityIndicatorForSDWebImage.h */; };
+		B03217B91930B8CC009955F8 /* UIImageView+UIActivityIndicatorForSDWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = B03217B71930B8CC009955F8 /* UIImageView+UIActivityIndicatorForSDWebImage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +120,8 @@
 		24DE9E1011C5FE74003F90F6 /* BeK0sukeTisdwebimageModuleAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BeK0sukeTisdwebimageModuleAssets.m; path = Classes/BeK0sukeTisdwebimageModuleAssets.m; sourceTree = "<group>"; };
 		AA747D9E0F9514B9006C5449 /* BeK0sukeTisdwebimage_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeK0sukeTisdwebimage_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B03217B61930B8CC009955F8 /* UIImageView+UIActivityIndicatorForSDWebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+UIActivityIndicatorForSDWebImage.h"; path = "UIActivityIndicator/UIImageView+UIActivityIndicatorForSDWebImage.h"; sourceTree = "<group>"; };
+		B03217B71930B8CC009955F8 /* UIImageView+UIActivityIndicatorForSDWebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+UIActivityIndicatorForSDWebImage.m"; path = "UIActivityIndicator/UIImageView+UIActivityIndicatorForSDWebImage.m"; sourceTree = "<group>"; };
 		D2AAC07E0554694100DB518D /* libBeK0sukeTisdwebimage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBeK0sukeTisdwebimage.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -167,6 +171,7 @@
 		08FB77AEFE84172EC02AAC07 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				B03217B51930B8BA009955F8 /* UIActivityIndicator */,
 				232F1C8C1863BFB100924732 /* SDWebImage */,
 				24DE9E0F11C5FE74003F90F6 /* BeK0sukeTisdwebimageModuleAssets.h */,
 				24DE9E1011C5FE74003F90F6 /* BeK0sukeTisdwebimageModuleAssets.m */,
@@ -226,6 +231,15 @@
 			name = "Other Sources";
 			sourceTree = "<group>";
 		};
+		B03217B51930B8BA009955F8 /* UIActivityIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				B03217B61930B8CC009955F8 /* UIImageView+UIActivityIndicatorForSDWebImage.h */,
+				B03217B71930B8CC009955F8 /* UIImageView+UIActivityIndicatorForSDWebImage.m */,
+			);
+			name = UIActivityIndicator;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -242,6 +256,7 @@
 				232F1CAC1863BFB100924732 /* NSData+GIF.h in Headers */,
 				232F1CB01863BFB100924732 /* SDWebImageCompat.h in Headers */,
 				232F1CC31863BFB100924732 /* UIImage+WebP.h in Headers */,
+				B03217B81930B8CC009955F8 /* UIImageView+UIActivityIndicatorForSDWebImage.h in Headers */,
 				232F1CAA1863BFB100924732 /* MKAnnotationView+WebCache.h in Headers */,
 				232F1CCA1863BFFB00924732 /* BeK0sukeTisdwebimageView.h in Headers */,
 				232F1CBD1863BFB100924732 /* UIButton+WebCache.h in Headers */,
@@ -330,6 +345,7 @@
 				232F1CB51863BFB100924732 /* SDWebImageDownloader.m in Sources */,
 				232F1CBE1863BFB100924732 /* UIButton+WebCache.m in Sources */,
 				232F1CCB1863BFFB00924732 /* BeK0sukeTisdwebimageView.m in Sources */,
+				B03217B91930B8CC009955F8 /* UIImageView+UIActivityIndicatorForSDWebImage.m in Sources */,
 				232F1CB31863BFB100924732 /* SDWebImageDecoder.m in Sources */,
 				24DD6CFA1134B3F500162E58 /* BeK0sukeTisdwebimageModule.m in Sources */,
 				232F1CCF1863C00D00924732 /* BeK0sukeTisdwebimageViewProxy.m in Sources */,
