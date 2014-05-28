@@ -6,6 +6,7 @@
  */
 
 #import "BeK0sukeTisdwebimageView.h"
+#import "UIImageView+UIActivityIndicatorForSDWebImage.h"
 
 @implementation BeK0sukeTisdwebimageView
 
@@ -147,6 +148,7 @@
                                   }
                               }
                           }
+						  usingActivityIndicatorStyle:(UIActivityIndicatorViewStyle)UIActivityIndicatorViewStyleGray
      ];
 }
 
